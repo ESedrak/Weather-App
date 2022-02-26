@@ -4,11 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Project Wireframe</title>
   </head>
   <body>
-    <h1>gitWorld</h1>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="weather">
+            <nav class="navbar navbar-dark bg-dark">
+             <div class="container-fluid">
+               <form class="d-flex" id = "search-form"> 
+                 <input
+                   class="form-control me-2"
+                   type="search"
+                   placeholder="Search City"
+                   autocomplete="off"
+                   autofocus = "on"
+                   id="search-text-input"
+                 />
+            <button class="btn btn-outline-light" type="submit" id="searchButton">
+              Search
+            </button>
+            <button type="button" class="btn btn-dark" id="currentLocation">Current</button>
+            </div>
+          </form>
+      </nav>
+      <h1 id="city"> City</h1>
+	  <div class = "temperatureUnits" >
+      <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/144/original/SimpleWeatherBlackIcon.jpg?1644798856"
+                alt="Sunny icon"
+                class="weather-icon"
+        />
+		  <span class = "todayTemperature" id="todayTemperature">0 </span>
+		  <span class="units">
+              <a href = "#" id="celsius-link"> °C </a> 
+		</div>
+	            <div class="row extrainfo">
+          <div class ="col-12" id="description">Description: </div>
+					<div class="col-12">Humidity: <span id="humidity">0</span>%</div>
+					<div class="col-12">Wind: <span id="wind">0</span>km/hr</div>
+				 </div>
+				 <h2 id="todaysTime"> Todays Time</h2>
+				  <div class="row futureDays">
+					   <div class="col-4">
+						   <h4>⛈Thursday</h4>
+						   <span class = "temperature">23/36°C</span>
+						   <br />
+						   <span class = "description">Thunderstorm</span>
+						</div>
+						<div class="col-4">
+							<h4>⛈Friday</h4>
+							<span class = "temperature">18/29°C</span>
+							<br />
+							<span class = "description">Thunderstorm</span>
+						</div>
+						<div class="col-4">
+							<h4>🌨Saturday</h4>
+							<span class = "temperature">18/23°C</span>
+							<br />
+							<span class = "description">Scattered Showers</span>
+						</div>
+						<div class="col-4">
+							<h4>🌥Sunday</h4>
+							<span class = "temperature">19/28°C</span>
+							<br />
+        <span class = "description">Partly Cloudy</span>
+      </div>
+      <div class="col-4">
+        <h4>🌧Monday</h4>
+        <span class = "temperature">22/32°C</span>
+        <br />
+        <span class = "description">Scattered Thunderstorm</span>
+      </div>
+      <div class="col-4">
+        <h4>⛈Tuesday</h4>
+        <span class = "temperature">22/32°C</span>
+        <br />
+        <span class = "description">Thunderstorm</span>
+      </div>
+    </div>
+    </div>
+    <script src="src/script.js"></script>
   </body>
 </html>
