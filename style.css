@@ -1,4 +1,111 @@
+body {
+  background-color: black;
+  color: rgb(247, 206, 230);
+}
+
 h1 {
-  color: blue;
+  font-size: 50px;
+  border: solid;
+  border-radius: 15px;
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0px 80px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(247, 206, 230);
+}
+
+.bg-dark {
+  --bs-bg-opacity: 0;
+  border: solid;
+  border-radius: 15px;
+}
+
+.card-body {
+  background-color: black;
+  padding: 0;
+}
+
+.col-4 {
+  padding: 15px;
+  border: solid;
+  border-radius: 15px;
+}
+
+.futureDays {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.description {
+  opacity: 0.8;
+  font-size: small;
+}
+
+.extrainfo {
+  opacity: 0.9;
+  font-size: small;
+  padding: 0px 80px;
+}
+
+.temperature {
+  font-size: 15px;
+}
+
+.temperatureUnits {
+  text-align: center;
+  display: block;
+}
+
+.todayDate {
+  text-align: center;
+  display: block;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.todayTemperature {
+  font-size: 60px;
+  position: relative;
+  top: 32px;
+}
+
+.units {
+  position: relative;
+  right: 7px;
+}
+
+.weather {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border: solid;
+  border-radius: 15px;
+}
+
+.weather-icon {
+  height: 100px;
+  position: relative;
+  top: -8px;
+}
+
+#currentLocation {
+  background-color: black;
+  border-color: white;
+  border-radius: solid;
+  position: relative;
+  left: 6px;
+}
+
+#currentLocation:hover {
+  transition-delay: 2ms;
+  background: white;
+  color: black;
+  border-color: black;
+  border-radius: solid;
 }
