@@ -1,13 +1,13 @@
 body {
   background-color: black;
   color: rgb(247, 206, 230);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-size: 50px;
-  border: solid;
-  border-radius: 15px;
   text-align: center;
+  line-height: 60px;
 }
 
 h2 {
@@ -22,6 +22,13 @@ a {
 
 li {
   list-style: none;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
 }
 
 .bg-dark {
@@ -62,7 +69,7 @@ li {
 }
 
 .temperatureUnits {
-  text-align: center;
+  text-align: right;
   display: block;
 }
 
@@ -84,11 +91,11 @@ li {
   right: 7px;
 }
 
-.weather {
+.weather-app {
   padding: 20px;
   margin: 20px auto;
   max-width: 600px;
-  border: solid;
+  border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
 }
 
