@@ -20,6 +20,10 @@ a {
   color: rgb(247, 206, 230);
 }
 
+li {
+  list-style: none;
+}
+
 .bg-dark {
   --bs-bg-opacity: 0;
   border: solid;
