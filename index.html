@@ -19,7 +19,7 @@
       <div class="weather">
             <nav class="navbar navbar-dark bg-dark">
              <div class="container-fluid">
-               <form class="d-flex" id = "search-form"> 
+               <form class="d-flex" id = "search-form">
                  <input
                    class="form-control me-2"
                    type="search"
@@ -36,6 +36,8 @@
           </form>
       </nav>
       <h1 id="city"> City</h1>
+	   <div class = "row">
+          <div class = "col-6">
 	  <div class = "temperatureUnits" >
       <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/027/144/original/SimpleWeatherBlackIcon.jpg?1644798856"
                 alt="Sunny icon"
@@ -43,52 +45,61 @@
         />
 		  <span class = "todayTemperature" id="todayTemperature">0 </span>
 		  <span class="units">
-              <a href = "#" id="celsius-link"> °C </a> 
+              <a href = "#" id="celsius-link"> °C </a>
 		</div>
-	            <div class="row extrainfo">
-          <div class ="col-12" id="description">Description: </div>
-					<div class="col-12">Humidity: <span id="humidity">0</span>%</div>
-					<div class="col-12">Wind: <span id="wind">0</span>km/hr</div>
-				 </div>
-				 <h2 id="todaysTime"> Todays Time</h2>
-				  <div class="row futureDays">
-					   <div class="col-4">
-						   <h4>⛈Thursday</h4>
-						   <span class = "temperature">23/36°C</span>
-						   <br />
-						   <span class = "description">Thunderstorm</span>
-						</div>
-						<div class="col-4">
-							<h4>⛈Friday</h4>
-							<span class = "temperature">18/29°C</span>
-							<br />
-							<span class = "description">Thunderstorm</span>
-						</div>
-						<div class="col-4">
-							<h4>🌨Saturday</h4>
-							<span class = "temperature">18/23°C</span>
-							<br />
-							<span class = "description">Scattered Showers</span>
-						</div>
-						<div class="col-4">
-							<h4>🌥Sunday</h4>
-							<span class = "temperature">19/28°C</span>
-							<br />
-        <span class = "description">Partly Cloudy</span>
-      </div>
-      <div class="col-4">
-        <h4>🌧Monday</h4>
-        <span class = "temperature">22/32°C</span>
-        <br />
-        <span class = "description">Scattered Thunderstorm</span>
-      </div>
-      <div class="col-4">
-        <h4>⛈Tuesday</h4>
-        <span class = "temperature">22/32°C</span>
-        <br />
-        <span class = "description">Thunderstorm</span>
-      </div>
-      <footer><a href="https://github.com/ESedrak/Weather-App" target="_blank">My Source Link</a></footer>
+		</div>
+    <div class = "col-6">
+		<ul>
+			<li>
+				 <span  id="description">Description: </span>
+		    </li>
+		    <li>
+			  Humidity: <span id="humidity">0</span>%
+  		    </li>
+            <li>
+                Wind: <span id="wind">0</span>km/hr
+            </li>
+        </ul>
+    </div>
+    <h2 id="todaysTime"> Todays Time</h2>
+    <div class="row futureDays">
+        <div class="col-4">
+            <h4>⛈Thursday</h4>
+            <span class = "temperature">23/36°C</span>
+            <br />
+            <span class = "description">Thunderstorm</span>
+        </div>
+        <div class="col-4">
+            <h4>⛈Friday</h4>
+            <span class = "temperature">18/29°C</span>
+            <br />
+            <span class = "description">Thunderstorm</span>
+        </div>
+        <div class="col-4">
+            <h4>🌨Saturday</h4>
+            <span class = "temperature">18/23°C</span>
+            <br />
+            <span class = "description">Scattered Showers</span>
+        </div>
+        <div class="col-4">
+            <h4>🌥Sunday</h4>
+            <span class = "temperature">19/28°C</span>
+            <br />
+            <span class = "description">Partly Cloudy</span>
+        </div>
+        <div class="col-4">
+            <h4>🌧Monday</h4>
+            <span class = "temperature">22/32°C</span>
+            <br />
+            <span class = "description">Scattered Thunderstorm</span>
+        </div>
+        <div class="col-4">
+            <h4>⛈Tuesday</h4>
+            <span class = "temperature">22/32°C</span>
+            <br />
+            <span class = "description">Thunderstorm</span>
+        </div>
+        <footer><a href="https://github.com/ESedrak/Weather-App" target="_blank">Open Source Code</a></footer>
     </div>
     </div>
     <script src="src/script.js"></script>
