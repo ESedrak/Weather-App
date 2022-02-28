@@ -31,14 +31,18 @@ function formatDate() {
 let todayTime = document.querySelector("#todaysTime");
 todayTime.innerHTML = formatDate();
 
-function search(event) {
-  event.preventDefault();
+function searchCity(city) {
   let apiKey = "2fe015e63630ed57d2ca7047e4ab4479";
   let units = "metric";
-  let city = document.querySelector("#search-text-input").value;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-text-input").value;
+  searchCity(city);
 }
 
 function showTemperature(response) {
@@ -86,7 +90,9 @@ function getLocation(event) {
 }
 
 let searchBar = document.querySelector("#search-form");
-searchBar.addEventListener("submit", search);
+searchBar.addEventListener("submit", handleSubmit);
 
 let currentButton = document.querySelector("#currentLocation");
 currentButton.addEventListener("click", getLocation);
+
+searchCity("Sydney");
