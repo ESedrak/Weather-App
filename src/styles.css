@@ -23,7 +23,7 @@ a {
 li {
   list-style: none;
   font-size: 10px;
-  opacity: 0.8;
+  text-transform: capitalize;
 }
 
 ul {
