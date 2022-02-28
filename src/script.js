@@ -29,7 +29,6 @@ function formatDate() {
 }
 
 let todayTime = document.querySelector("#todaysTime");
-
 todayTime.innerHTML = formatDate();
 
 function search(event) {
@@ -62,6 +61,14 @@ function showTemperature(response) {
   let description = response.data.weather[0].description;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = description;
+
+  let icon = response.data.weather[0].icon;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", description);
 }
 
 function searchLocation(position) {
