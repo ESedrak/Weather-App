@@ -42,7 +42,7 @@ ul {
   padding: 0;
 }
 
-.col-4 {
+.forecast {
   padding: 15px;
   border: solid;
   border-radius: 15px;
@@ -94,7 +94,7 @@ ul {
 .weather-app {
   padding: 20px;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 450px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
   background-clip: content-box, padding-box;
