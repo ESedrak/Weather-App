@@ -149,23 +149,10 @@ currentButton.addEventListener("click", getLocation);
 
 let celsiusTemperature = null;
 
-function showFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#todayTemperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
 function showCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#todayTemperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-
-let farenheitLink = document.querySelector("#fahrenheit-link");
-farenheitLink.addEventListener("click", showFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 searchCity("Sydney");
