@@ -20,6 +20,11 @@ a {
   color: rgb(247, 206, 230);
 }
 
+footer {
+  text-align: center;
+  font-size: 10px;
+}
+
 li {
   list-style: none;
   font-size: 10px;
@@ -33,24 +38,11 @@ ul {
 
 .bg-dark {
   --bs-bg-opacity: 0;
-  border: solid;
-  border-radius: 15px;
 }
 
 .card-body {
   background-color: black;
   padding: 0;
-}
-
-.forecast {
-  padding: 15px;
-  border: solid;
-  border-radius: 15px;
-}
-
-.futureDays {
-  padding: 15px;
-  border-radius: 15px;
 }
 
 .description {
