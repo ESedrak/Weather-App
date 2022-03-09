@@ -45,34 +45,23 @@ ul {
   padding: 0;
 }
 
-.description {
-  opacity: 0.8;
-  font-size: small;
-}
-
-.extrainfo {
-  opacity: 0.9;
-  font-size: small;
-  padding: 0px 80px;
+.last-updated-time {
+  opacity: 0.6;
+  font-size: 10px;
+  text-align: center;
+  display: block;
 }
 
 .temperature {
   font-size: 15px;
 }
 
-.temperatureUnits {
+.temperature-units {
   text-align: right;
   display: block;
 }
 
-.todayDate {
-  text-align: center;
-  display: block;
-  padding: 30px;
-  font-size: 25px;
-}
-
-.todayTemperature {
+.today-temperature {
   font-size: 60px;
   position: relative;
   top: 32px;
@@ -99,6 +88,15 @@ ul {
   height: 100px;
   position: relative;
   top: -8px;
+}
+
+.today-info {
+  padding: 20px;
+}
+
+.wrap-app {
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 5px;
 }
 
 #currentLocation {
