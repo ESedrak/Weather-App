@@ -48,20 +48,20 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         `
-      <div class="col-12">
-        <span class = "weather-forecast-date">${formatFutureDay(
+      <div class="col-2">
+        <div class = "weather-forecast-date">${formatFutureDay(
           forecastDay.dt
-        )}</span>
+        )}</div>
         <img src = "http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
         }@2x.png" alt = "" width = 40px />
-        <span class = "weather-forecast-temperatures">
+        <div class = "weather-forecast-temperatures">
             <span class = "weather-forecast-temperature-min">${Math.round(
               forecastDay.temp.min
-            )}</span>°C 
+            )}°C</span> 
             <span class = "weather-forecast-temperature-max">${Math.round(
               forecastDay.temp.max
-            )}</span>°C
+            )}°C</span>
         </div>
         </div>`;
     }
