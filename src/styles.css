@@ -70,6 +70,11 @@ ul {
 .today-temperature {
   font-size: 60px;
 }
+
+.temperature-units {
+  text-align: center;
+  display: block;
+}
 .units {
   vertical-align: top;
 }
