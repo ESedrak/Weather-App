@@ -1,7 +1,17 @@
-body {
-  background-color: rgb(41, 40, 40);
+a {
+  text-decoration: none;
   color: rgb(247, 206, 230);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  color: rgb(247, 222, 236);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-size: 10px;
 }
 
 h1 {
@@ -13,16 +23,6 @@ h1 {
 h2 {
   text-align: center;
   padding: 20px 0px 80px;
-}
-
-a {
-  text-decoration: none;
-  color: rgb(247, 206, 230);
-}
-
-footer {
-  text-align: center;
-  font-size: 10px;
 }
 
 li {
@@ -40,9 +40,13 @@ ul {
   --bs-bg-opacity: 0;
 }
 
-.card-body {
-  background-color: black;
-  padding: 0;
+.btn {
+  box-shadow: 4px 2px 15px black;
+}
+
+.extra-info {
+  opacity: 0.8;
+  font-size: 15px;
 }
 
 .last-updated-time {
@@ -61,15 +65,21 @@ ul {
   display: block;
 }
 
+.today-info {
+  padding: 20px;
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  box-shadow: 4px 6px 12px black;
+}
+
 .today-temperature {
-  font-size: 60px;
-  position: relative;
-  top: 32px;
+  font-size: 70px;
 }
 
 .units {
   position: relative;
-  right: 7px;
+  right: 3px;
+  top: -38px;
 }
 
 .weather-app {
@@ -78,48 +88,50 @@ ul {
   max-width: 450px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
-  background-clip: content-box, padding-box;
-  box-shadow: 0em 0 3.4em black;
+  background: linear-gradient(
+    153deg,
+    rgb(20, 19, 19),
+    #13174e 43%,
+    rgb(20, 19, 19)
+  );
 }
 .weather-forecast {
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
-  box-shadow: 0em 0 3.4em black;
+  box-shadow: 4px 6px 12px black;
   padding: 20px;
   text-align: center;
 }
 
-.weather-forecast-temperature-min {
-  opacity: 0.6;
-}
-
-.weather-forecast-temperature-max {
-  opacity: 0.8;
-}
-
 .weather-forecast-date {
   opacity: 0.9;
+  font-size: 15px;
 }
 
 .weather-icon {
   height: 100px;
   position: relative;
-  top: -8px;
+  top: -30px;
 }
 
-.today-info {
-  padding: 20px;
-  border: 2px solid rgb(247, 206, 230);
-  border-radius: 15px;
-  box-shadow: 0em 0 3.4em black;
+.weather-forecast-temperatures {
+  font-size: 10px;
+}
+
+.weather-forecast-temperature-max {
+  opacity: 0.8;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.6;
 }
 
 #currentLocation {
-  background-color: black;
+  background-color: #13153a;
   border-color: white;
   border-radius: solid;
   position: relative;
   left: 6px;
+  box-shadow: 4px 2px 15px black;
 }
 
 #currentLocation:hover {
