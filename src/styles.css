@@ -28,7 +28,6 @@ h2 {
 li {
   list-style: none;
   font-size: 10px;
-  text-transform: capitalize;
 }
 
 ul {
@@ -134,5 +133,14 @@ ul {
   background: white;
   color: black;
   border-color: black;
-  border-radius: solid;
+  border-radius: 2px solid #6e7080;
+}
+
+#currentLocation:active {
+  border-color: #6e7080;
+  box-shadow: -3px -3px 2px #6e7080, 3px 3px 2px #6e7080;
+}
+
+#description {
+  text-transform: capitalize;
 }
