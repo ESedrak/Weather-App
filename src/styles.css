@@ -68,15 +68,15 @@ ul {
 }
 
 .today-temperature {
-  font-size: 60px;
+  font-size: 70px;
 }
 
 .temperature-units {
   text-align: center;
-  display: block;
 }
 .units {
-  vertical-align: top;
+  position: relative;
+  top: -38px;
 }
 .weather-app {
   padding: 20px;
@@ -106,6 +106,7 @@ ul {
 
 .weather-icon {
   height: 105px;
+  width: 100px;
 }
 
 .weather-forecast-temperatures {
