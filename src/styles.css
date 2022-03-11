@@ -60,11 +60,6 @@ ul {
   font-size: 15px;
 }
 
-.temperature-units {
-  text-align: right;
-  display: block;
-}
-
 .today-info {
   padding: 20px;
   border: 2px solid rgb(247, 206, 230);
@@ -109,9 +104,9 @@ ul {
 }
 
 .weather-icon {
-  height: 100px;
+  height: 105px;
   position: relative;
-  top: -30px;
+  right: -15px;
 }
 
 .weather-forecast-temperatures {
