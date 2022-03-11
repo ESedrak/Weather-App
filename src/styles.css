@@ -69,14 +69,11 @@ ul {
 
 .today-temperature {
   font-size: 70px;
+  vertical-align: top;
 }
-
 .units {
-  position: relative;
-  right: 3px;
-  top: -38px;
+  vertical-align: top;
 }
-
 .weather-app {
   padding: 20px;
   margin: 20px auto;
