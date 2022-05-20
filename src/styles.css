@@ -14,12 +14,6 @@ footer {
   font-size: 10px;
 }
 
-/* add a footer hover */
-footer:hover {
-  color: yellow;
-}
-
-
 h1 {
   font-size: 50px;
   text-align: center;
@@ -79,12 +73,10 @@ ul {
 .temperature-units {
   text-align: center;
 }
-
 .units {
   position: relative;
   top: -38px;
 }
-
 .weather-app {
   padding: 20px;
   margin: 20px auto;
@@ -93,11 +85,11 @@ ul {
   border-radius: 15px;
   background: linear-gradient(
     153deg,
-      rgb(20, 19, 19),
-      #13174e 43%,
-      rgb(20, 19, 19));
+    rgb(20, 19, 19),
+    #13174e 43%,
+    rgb(20, 19, 19)
+  );
 }
-
 .weather-forecast {
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
@@ -123,7 +115,6 @@ ul {
 .weather-forecast-temperature-max {
   opacity: 0.8;
 }
-
 .weather-forecast-temperature-min {
   opacity: 0.6;
 }
