@@ -91,7 +91,8 @@ ul {
   max-width: 450px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
-  background: linear-gradient(153deg,
+  background: linear-gradient(
+    153deg,
       rgb(20, 19, 19),
       #13174e 43%,
       rgb(20, 19, 19));
