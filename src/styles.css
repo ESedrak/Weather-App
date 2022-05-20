@@ -15,7 +15,7 @@ footer {
 }
 
 /* add a footer hover */
-footer:hover {
+footer a:hover {
   color: yellow;
 }
 
