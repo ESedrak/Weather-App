@@ -14,6 +14,11 @@ footer {
   font-size: 10px;
 }
 
+/* add a footer hover */
+footer a:hover {
+  color: yellow;
+}
+
 h1 {
   font-size: 50px;
   text-align: center;
