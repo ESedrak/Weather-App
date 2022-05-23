@@ -10,11 +10,12 @@ function formatDate() {
     "Friday",
     "Saturday",
   ];
-
+  // Data on day, hour and minute
   let currentDay = days[currentTime.getDay()];
   let currentHour = currentTime.getHours();
   let currentMinute = currentTime.getMinutes();
 
+  // added a 0 if time was under 10
   if (currentHour < 10) {
     currentHour = `0${currentHour}`;
   }
@@ -29,6 +30,7 @@ function formatDate() {
 }
 
 function formatFutureDay(timestamp) {
+  // Need to multiply time by 1000 (JS used milliseconds to represent epoch time, 1000 milliseconds in one second)
   let date = new Date(timestamp * 1000);
   let day = date.getDay();
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -74,6 +76,7 @@ let todayTime = document.querySelector("#todaysTime");
 todayTime.innerHTML = formatDate();
 
 function searchCity(city) {
+  // documentation: `https://api.openweathermap.org/data/2.5/weather?q=city&appid=apiKey&units=units`
   let apiKey = "2fe015e63630ed57d2ca7047e4ab4479";
   let units = "metric";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
