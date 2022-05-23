@@ -84,8 +84,8 @@ function searchCity(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-function handleSubmit(event) {
-  event.preventDefault();
+function handleSubmit(e) {
+  e.preventDefault();
   let city = document.querySelector("#search-text-input").value;
   searchCity(city);
 }
@@ -139,8 +139,8 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showTemperature);
 }
 
-function getLocation(event) {
-  event.preventDefault();
+function getLocation(e) {
+  e.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
@@ -152,10 +152,11 @@ currentButton.addEventListener("click", getLocation);
 
 let celsiusTemperature = null;
 
-function showCelsiusTemperature(event) {
-  event.preventDefault();
+function showCelsiusTemperature(e) {
+  e.preventDefault();
   let temperatureElement = document.querySelector("#todayTemperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
+// Default Search to city Sydney
 searchCity("Sydney");
