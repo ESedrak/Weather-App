@@ -1,6 +1,7 @@
+/* alphabetically listed for each section */
 a {
-  text-decoration: none;
   color: rgb(247, 206, 230);
+  text-decoration: none;
 }
 
 body {
@@ -10,8 +11,8 @@ body {
 }
 
 footer {
-  text-align: center;
   font-size: 10px;
+  text-align: center;
 }
 
 /* add a footer hover */
@@ -21,13 +22,13 @@ footer a:hover {
 
 h1 {
   font-size: 50px;
-  text-align: center;
   line-height: 60px;
+  text-align: center;
 }
 
 h2 {
-  text-align: center;
   padding: 20px 0px 80px;
+  text-align: center;
 }
 
 li {
@@ -40,6 +41,7 @@ ul {
   padding: 0px;
 }
 
+/* alphabetically listed for each class */
 .bg-dark {
   --bs-bg-opacity: 0;
 }
@@ -49,15 +51,15 @@ ul {
 }
 
 .extra-info {
-  opacity: 0.8;
   font-size: 15px;
+  opacity: 0.8;
 }
 
 .last-updated-time {
-  opacity: 0.6;
-  font-size: 10px;
-  text-align: center;
   display: block;
+  font-size: 10px;
+  opacity: 0.6;
+  text-align: center;
 }
 
 .temperature {
@@ -65,10 +67,10 @@ ul {
 }
 
 .today-info {
-  padding: 20px;
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
   box-shadow: 4px 6px 12px black;
+  padding: 20px;
 }
 
 .today-temperature {
@@ -78,23 +80,26 @@ ul {
 .temperature-units {
   text-align: center;
 }
+
 .units {
   position: relative;
   top: -38px;
 }
+
 .weather-app {
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 450px;
-  border: 2px solid rgb(247, 206, 230);
-  border-radius: 15px;
   background: linear-gradient(
     153deg,
     rgb(20, 19, 19),
     #13174e 43%,
     rgb(20, 19, 19)
   );
+  border: 2px solid rgb(247, 206, 230);
+  border-radius: 15px;
+  margin: 20px auto;
+  max-width: 450px;
+  padding: 20px;
 }
+
 .weather-forecast {
   border: 2px solid rgb(247, 206, 230);
   border-radius: 15px;
@@ -104,8 +109,8 @@ ul {
 }
 
 .weather-forecast-date {
-  opacity: 0.9;
   font-size: 15px;
+  opacity: 0.9;
 }
 
 .weather-icon {
@@ -124,21 +129,23 @@ ul {
   opacity: 0.6;
 }
 
+/* alphabetically listed for each ID */
+
 #currentLocation {
   background-color: #13153a;
   border-color: white;
   border-radius: solid;
-  position: relative;
-  left: 6px;
   box-shadow: 4px 2px 15px black;
+  left: 6px;
+  position: relative;
 }
 
 #currentLocation:hover {
-  transition-delay: 2ms;
-  background: white;
-  color: black;
   border-color: black;
   border-radius: 2px solid #6e7080;
+  background: white;
+  color: black;
+  transition-delay: 2ms;
 }
 
 #currentLocation:active {
