@@ -125,8 +125,6 @@ function showTemperature(response) {
   );
   iconElement.setAttribute("alt", description);
 
-  celsiusTemperature = temperature;
-
   getForecast(response.data.coord);
 }
 
@@ -139,6 +137,7 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+// Geolocation.getCurrentPosition() method is used to get the current position of the device.
 function getLocation(e) {
   e.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
@@ -149,14 +148,6 @@ searchBar.addEventListener("submit", handleSubmit);
 
 let currentButton = document.querySelector("#currentLocation");
 currentButton.addEventListener("click", getLocation);
-
-let celsiusTemperature = null;
-
-function showCelsiusTemperature(e) {
-  e.preventDefault();
-  let temperatureElement = document.querySelector("#todayTemperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
 
 // Default Search to city Sydney
 searchCity("Sydney");
