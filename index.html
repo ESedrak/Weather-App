@@ -17,63 +17,66 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <div class="wrap-app">
-          <div class="today-info">
-            <nav class="navbar navbar-dark bg-dark">
-              <div class="container-fluid">
-                <form class="d-flex" id = "search-form">
-                  <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="City"
-                  autocomplete="off"
-                  autofocus = "on"
-                  id="search-text-input"
-                  />
-                  <button class="btn btn-outline-light" type="submit" id="searchButton">
-                    Search
-                  </button>
-                  <button type="button" class="btn btn-dark" id="currentLocation">Current</button>
-                </div>
-              </form>
-            </nav>
-            <h1 id="city"> City</h1>
-            <div class = "row">
-              <div class = "col-3">
-                <div class = "temperature-units" >
-                  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/896/original/StockWeatherImage.png?1646862957"
+        <div class="today-info">
+          <nav class="navbar navbar-dark bg-dark">
+            <form class="d-flex" id="search-form">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="City"
+                autocomplete="off"
+                autofocus="on"
+                id="search-text-input"
+              />
+              <button
+                class="btn btn-outline-light"
+                type="submit"
+                id="searchButton"
+              >
+                Search
+              </button>
+              <button type="button" class="btn btn-dark" id="currentLocation">
+                Current
+              </button>
+            </form>
+          </nav>
+          <h1 id="city">City</h1>
+          <div class="row">
+            <div class="col-3">
+              <div class="temperature-units">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/028/896/original/StockWeatherImage.png?1646862957"
                   alt="Stock weather icon"
                   class="weather-icon"
                   id="icon"
-                  />
-                </div>
-              </div>
-              <div class = "col-5 temperature-units">
-                <span class = "today-temperature" id="todayTemperature">0 </span>
-                <span class="units"> °C </span>
-              </div>
-              <div class = "col-4">
-                <ul class="extra-info">
-                  <li><span  id="description">Description: </span>
-                  </li>
-                  <li>
-                    Humidity: <span id="humidity">0</span>%
-                  </li>
-                  <li>
-                    Wind: <span id="wind">0</span> km/h
-                  </li>
-                </ul>
+                />
               </div>
             </div>
-            <span class = "last-updated-time"> Last Updated: <span id="todaysTime"> Todays Time</span></span>
+            <div class="col-5 temperature-units">
+              <span class="today-temperature" id="todayTemperature">0 </span>
+              <span class="units"> °C </span>
+            </div>
+            <div class="col-4">
+              <ul class="extra-info">
+                <li><span id="description">Description: </span></li>
+                <li>Humidity: <span id="humidity">0</span>%</li>
+                <li>Wind: <span id="wind">0</span> km/h</li>
+              </ul>
+            </div>
           </div>
-        <br/>
-        <div class="weather-forecast" id="forecast">
+          <span class="last-updated-time">
+            Last Updated: <span id="todaysTime"> Todays Time</span></span
+          >
         </div>
+        <br />
+        <div class="weather-forecast" id="forecast"></div>
       </div>
+      <footer>
+        <a href="https://github.com/ESedrak/Weather-App" target="_blank"
+          >Open Source Code by Elizabeth Sedrak</a
+        >
+      </footer>
     </div>
-    <footer><a href="https://github.com/ESedrak/Weather-App" target="_blank">Open Source Code by Elizabeth Sedrak</a></footer>
-  </div>
-  <script src="src/script.js"></script>
-</body>
+    <script src="src/script.js"></script>
+  </body>
 </html>
